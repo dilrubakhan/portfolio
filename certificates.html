@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="transparent nav-wrapper z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-nav" class="button-collapse show-on-large">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="index.html" class="brand-logo">Portfolio</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li >
+            <a href="about.html">About</a>
+          </li>
+          <li class="active">
+            <a href="certificates.html">Certificates</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="side-nav" id="mobile-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li class="active">
+            <a href="certificates.html">Certificates</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="center">Hello I'm Dilruba</h1>
+    <h4 class="center"> I Do Back-End-Development</h4><br>
+    <p class="center">Se my certificates...</p>
+  </header>
+
+  <!-- Section: Main -->
+  <section class="section section-main">
+    <div class="container">
+        <h2>My Certificates</h2>
+        
+        <div class="row">
+            <div class="col s6">
+              <div class="card">
+                <div class="card-panel indigo lighten-1 card-height" >
+                    <h6>BSC DEGREE IN DIGITAL TECHNOLOGY & DESIGN (LEVEL 7)</h6>
+                      <div class="cert-img">
+                                <img src="img/dtd.jpg" alt="">
+                            </div>      
+                            <div class="cert-text">
+                                <p>This is a one-year, part-time, Level 7 undergraduate ordinary degree which ran from November 2017 to November 2018</p>
+                            </div>                             
+                    
+                </div>
+                
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card">
+                <div class="card-panel indigo lighten-1 card-height">
+                    <h6>BACHELOR OF SCIENCE (HONORS) IN BUSINESS COMPUTING</h6>               
+                <div class="cert-img">
+                    <img src="img/bc.jpg" alt="">
+                </div>
+                <div class="cert-text">
+                    <p>This 4 years long programme aims to develop skilled IT professionals with strong software and related skills and a good knowledge of how businesses function</p>
+                </div>
+                           
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+      
+          </div>
+    </div>
+  </section>
+
+
+      </div>
+    </div>
+  </section>
+  
+<!-- footer -->
+<footer class="page-footer ">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+      <div class="footer-copyright">
+        <p> © 2021 Dilruba Khan</p>      
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+
+
+  
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      // Init Modal
+      $('.modal').modal();
+
+      // Scrollfire
+      const options = [
+        {
+          selector: '.row-1', offset: 50, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-2', offset: 300, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-3', offset: 400, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
+
+    });
+  </script>
+</body>
+
+</html>

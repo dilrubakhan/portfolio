@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="transparent nav-wrapper z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-nav" class="button-collapse show-on-large">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="index.html" class="brand-logo">Portfolio</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="certificates.html">Certificates</a>
+          </li>
+          <li class="active">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="side-nav" id="mobile-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="certificates.html">Certificates</a>
+        </li>
+        <li class="active">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="center">Hello I'm Dilruba</h1>
+    <h4 class="center"> I Do Back-End-Development</h4><br>
+    <p class="center">Contact me...</p>
+  </header>
+
+
+   
+<!-- Section: Contact -->
+<section id="contact" class="section section-contact scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card-panel black white-text center">
+          <i class="material-icons medium">email</i>
+          <h5>Get in Touch</h5>
+          <p>I’d love to hear about what you’re working on and how I could befriend with. Please chenck out my projects and feel free to get in touch using the form</p>
+          
+        </div>       
+        <ul class="collection with-header black-text ">
+          <li class="collection-header grey lighten-3 ">
+            <h4>My Location</h4>
+          </li>
+          <li class="collection-item grey lighten-3">Cabinteely</li>
+          <li class="collection-item grey lighten-3">Dublin 18</li>
+          <li class="collection-item grey lighten-3">Ireland</li>
+        </ul>
+      
+      </div>
+      <!--form-->
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-3 black-text">
+          <h5>Please fill out this form</h5>
+
+          <form action="https://formsubmit.co/dilruba.khan.orbit@gmail.com" method="POST">
+
+            <input type="hidden" name="_next" value="https://dilrubakhan.github.io/portfolio/thanks.html">
+
+            <input type="hidden" name="_subject" value="Email from my portfolio">
+            
+            <div class="input-field">
+              <input type="text" name="name" placeholder="Name"  required>
+              <label class="black-text" for="name">Name</label>
+            </div>
+
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Email"  required>
+              <label class="black-text" for="email">Email</label>
+            </div>
+
+          <div class="input-field">
+            <input type="text" name="phone" placeholder="Phone" >
+            <label class="black-text" for="phone">Phone</label>
+          </div>
+
+          <div class="input-field">
+            <textarea class="materialize-textarea" name="message" placeholder="Enter Message" ></textarea>
+            <label class="black-text" for="message">Message</label>
+          </div>
+
+          <input type="submit" value="Submit" class="btn">
+        </div>
+      </form>
+        <!--end form-->
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+<!-- footer -->
+<footer class="page-footer ">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+      <div class="footer-copyright">
+        <p> © 2021 Dilruba Khan</p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+
+
+    // Scrollfire
+    const options = [
+        {
+          selector: '.row-1', offset: 50, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-2', offset: 300, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.row-3', offset: 400, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
+
+    });
+  </script>
+</body>
+
+</html>

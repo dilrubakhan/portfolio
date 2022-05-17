@@ -1,0 +1,77 @@
+@import './materialize';
+
+// Vars
+$header-bg: url(../img/pattern.jpg);
+$header-height: 300px;
+
+// Text Color Function
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
+}
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.main-header {
+  background: $header-bg;
+  color: #fff;
+  height: $header-height;
+  margin-bottom: 30px;
+
+  h1 {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: $primary-color;
+}
+.page-footer {
+  background-color: rgb(66, 64, 64);
+  padding: 0;
+}
+
+.modal {
+  color: #333;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  opacity: 0;
+}
+
+.section-contact h5 {
+  margin-top: 110px;
+}
+.about-me{
+  
+  font-size: 20px;
+  margin: 20px;
+}
+.my-image{
+  margin: 20px;
+  
+}
+.section-contact h5 {
+  margin-bottom: 30px;
+}
